@@ -4,16 +4,39 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11f541a3-362a-4291-ae9d-7190ec979113" name="Changes" comment="" />
+    <list default="true" id="11f541a3-362a-4291-ae9d-7190ec979113" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/authentication-service/authentication-service.dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/cmd/api/handlers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/cmd/api/helpers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/cmd/api/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/cmd/api/routes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/data/models.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-service/broker-service.dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/broker-service/broker-service.dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-service/cmd/api/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/broker-service/cmd/api/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-service/cmd/api/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/broker-service/cmd/api/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/cmd/web/templates/test.page.gohtml" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmd/web/templates/test.page.gohtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/project/docker-compose.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" url="file:///opt/homebrew/opt/go/libexec" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2tPPpbQnZSZaNeAoq2xpnDrkskL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,17 +44,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/mayankgupta",
-    "nodejs_package_manager_path": "npm"
+    "last_opened_file_path": "/Users/mayankgupta/DarkSide/microservices-go/authentication-service/cmd/api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/authentication-service/cmd/api" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
