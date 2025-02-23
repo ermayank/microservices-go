@@ -48,6 +48,7 @@ func (l *LogEntry) Insert(entry LogEntry) error {
 	return nil
 }
 
+// Get All logs
 func (l *LogEntry) All() ([]*LogEntry, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()

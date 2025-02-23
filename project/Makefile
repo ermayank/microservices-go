@@ -1,6 +1,8 @@
 FRONT_END_BINARY=frontApp
 BROKER_BINARY=brokerApp
 AUTH_BINARY=authApp
+LOGGER_BINARY=loggerServiceApp
+MAILER_BINARY=mailServiceApp
 
 ## up: starts all containers in the background without forcing build
 up:
@@ -9,7 +11,7 @@ up:
 	@echo "Docker images started!"
 
 ## up_build: stops docker-compose (if running), builds all projects and starts docker compose
-up_build: build_broker build_auth
+up_build: build_broker build_auth build_logger build_mailer
 	@echo "Stopping docker images (if running...)"
 	docker-compose down
 	@echo "Building (when required) and starting docker images..."
@@ -20,24 +22,37 @@ up_build: build_broker build_auth
 down:
 	@echo "Stopping docker compose..."
 	docker-compose down
-	@echo "Done!"
+	@echo "Done! Stopping Docker Compose"
 
 ## build_broker: builds the broker binary as a linux executable
 build_broker:
 	@echo "Building broker binary..."
 	cd ../broker-service && env GOOS=linux CGO_ENABLED=0 go build -o ${BROKER_BINARY} ./cmd/api
-	@echo "Done!"
+	@echo "Done! Building Broker Binary"
+
+## build_Logger: builds the Logger binary as a linux executable
+build_logger:
+	@echo "Building Logger binary..."
+	cd ../logger-service && env GOOS=linux CGO_ENABLED=0 go build -o ${LOGGER_BINARY} ./cmd/api
+	@echo "Done! Building Logger Binary"
 
 ## build_auth: builds the auth binary as a linux executable
 build_auth:
 	@echo "Building Auth binary..."
 	cd ../authentication-service && env GOOS=linux CGO_ENABLED=0 go build -o ${AUTH_BINARY} ./cmd/api
-	@echo "Done!"
+	@echo "Done! Building Auth Binary"
+
+## build_mailer: builds the Mailer binary as a linux executable
+build_mailer:
+	@echo "Building Mailer binary..."
+	cd ../mail-service && env GOOS=linux CGO_ENABLED=0 go build -o ${MAILER_BINARY} ./cmd/api
+	@echo "Done! Building Mailer Binary"
+
 ## build_front: builds the frone end binary
 build_front:
 	@echo "Building front end binary..."
 	cd ../front-end && env CGO_ENABLED=0 go build -o ${FRONT_END_BINARY} ./cmd/web
-	@echo "Done!"
+	@echo "Done!Building frontEnd"
 
 ## start: starts the front end
 start: build_front

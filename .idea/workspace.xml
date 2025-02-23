@@ -5,16 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11f541a3-362a-4291-ae9d-7190ec979113" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/logger-service/cmd/api/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logger-service/cmd/data/models.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logger-service/cmd/api/handlers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logger-service/cmd/api/helpers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logger-service/cmd/api/routes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logger-service/logger-service.dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/authApp" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/authApp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/cmd/api/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/cmd/api/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-service/brokerApp" beforeDir="false" afterPath="$PROJECT_DIR$/broker-service/brokerApp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-service/cmd/api/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/broker-service/cmd/api/handlers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/cmd/web/templates/test.page.gohtml" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmd/web/templates/test.page.gohtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/frontApp" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/frontApp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger-service/cmd/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger-service/cmd/api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger-service/cmd/data/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger-service/cmd/data/models.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger-service/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/logger-service/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger-service/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/logger-service/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/project/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/13757/pg_internal.init" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/base/16384/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/base/16384/pg_internal.init" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/db-data/postgres/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/global/pg_internal.init" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_0.stat" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_0.stat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_13757.stat" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_13757.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_13757.stat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_16384.stat" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/db_16384.stat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/global.stat" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_stat_tmp/global.stat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/db-data/postgres/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/pg_wal/000000010000000000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db-data/postgres/postmaster.pid" beforeDir="false" afterPath="$PROJECT_DIR$/project/db-data/postgres/postmaster.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/project/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,27 +57,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mayankgupta/DarkSide/microservices-go/authentication-service/cmd/api&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/mayankgupta/DarkSide/microservices-go/logger-service/cmd/api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/logger-service/cmd/api" />
       <recent name="$PROJECT_DIR$/authentication-service/cmd/api" />
     </key>
   </component>
@@ -75,6 +93,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
