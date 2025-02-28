@@ -19,23 +19,22 @@ const webPort = "80"
 var counts int64
 
 type Config struct {
-	DB     *sql.DB
-	Models data.Models
+	Repo   data.Repository
+	Client *http.Client
 }
 
 func main() {
-	log.Println("Starting Authentication Service")
+	log.Println("Starting authentication service")
 
-	//Connect to DB
-	conn := connectDB()
+	// connect to DB
+	conn := connectToDB()
 	if conn == nil {
-		log.Panic("Could not connect to Database")
+		log.Panic("Can't connect to Postgres!")
 	}
 
-	//Set up Config
+	// set up config
 	app := Config{
-		DB:     conn,
-		Models: data.New(conn),
+		Client: &http.Client{},
 	}
 
 	srv := &http.Server{
@@ -51,13 +50,11 @@ func main() {
 
 func openDB(dsn string) (*sql.DB, error) {
 	db, err := sql.Open("pgx", dsn)
-
 	if err != nil {
 		return nil, err
 	}
 
 	err = db.Ping()
-
 	if err != nil {
 		return nil, err
 	}
@@ -65,16 +62,16 @@ func openDB(dsn string) (*sql.DB, error) {
 	return db, nil
 }
 
-func connectDB() *sql.DB {
+func connectToDB() *sql.DB {
 	dsn := os.Getenv("DSN")
 
 	for {
 		connection, err := openDB(dsn)
 		if err != nil {
-			log.Println("Error connecting to database")
+			log.Println("Postgres not yet ready ...")
 			counts++
 		} else {
-			log.Println("Connected to database")
+			log.Println("Connected to Postgres!")
 			return connection
 		}
 
@@ -83,9 +80,13 @@ func connectDB() *sql.DB {
 			return nil
 		}
 
-		log.Println("Backing/Cooling Off for two seconds")
-
+		log.Println("Backing off for two seconds....")
 		time.Sleep(2 * time.Second)
 		continue
 	}
+}
+
+func (app *Config) setupRepo(conn *sql.DB) {
+	db := data.NewPostgresRepository(conn)
+	app.Repo = db
 }
